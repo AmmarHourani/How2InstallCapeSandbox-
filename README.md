@@ -58,6 +58,9 @@ nano /opt/CAPEv2/conf/kvm.conf
 
 add VM info like name, label, platfarm, ip ...etc
 
+
+
+
 ///***troubleshoot virtual machine mananger***
 
 sudo dpkg -i --force-overwrite /var/cache/apt/archives/qemu-system-data_1%3a6.2+dfsg-2ubuntu6.19_all.deb
@@ -71,6 +74,9 @@ sudo dpkg -i --force-overwrite /var/cache/apt/archives/qemu-system-common_1%3a6.
 sudo apt --fix-broken install
 
 sudo apt-get install virt-manager
+
+
+
 
 ///***in VMs***
 
@@ -92,6 +98,8 @@ password: ******.... (windows 10 and 11 no password needed)
 - add the agent in task scheduler run when it log on as admin
 
 
+
+
 ///***Don't forget to do:***
 
 HOSTONLY
@@ -99,6 +107,9 @@ STATIC IP for the VM
 AGENT CONNECTION (Make sure by "curl vmip:8000" to see if the agent works as expected)
 take a SNAPSHOT X (name it snapshot1)
 make sure the interface name on KVM.conf 
+
+
+
 
 ///***install mongodb:***
 
