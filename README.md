@@ -102,11 +102,11 @@ password: ******.... (windows 10 and 11 no password needed)
 
 ///***Don't forget to do:***
 
--HOSTONLY
--STATIC IP for the VM
--AGENT CONNECTION (Make sure by "curl vmip:8000" to see if the agent works as expected)
--take a SNAPSHOT X (name it snapshot1)
--make sure the interface name on KVM.conf 
+- HOSTONLY
+- STATIC IP for the VM
+- AGENT CONNECTION (Make sure by "curl vmip:8000" to see if the agent works as expected)
+- take a SNAPSHOT X (name it snapshot1)
+- make sure the interface name on KVM.conf 
 
 
 
