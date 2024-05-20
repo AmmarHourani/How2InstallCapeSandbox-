@@ -58,7 +58,7 @@ nano /opt/CAPEv2/conf/kvm.conf
 
 add VM info like name, label, platfarm, ip ...etc
 
-***troubleshoot virtual machine mananger***
+///***troubleshoot virtual machine mananger***
 
 sudo dpkg -i --force-overwrite /var/cache/apt/archives/qemu-system-data_1%3a6.2+dfsg-2ubuntu6.19_all.deb
 
@@ -72,3 +72,34 @@ sudo apt --fix-broken install
 
 sudo apt-get install virt-manager
 
+///***in VMs***
+
+(windows 11 64x, windows 10 64x, windows 7 64x, windows 7 32x)
+
+user: admin
+password: ******.... (windows 10 and 11 no password needed)
+
+- download python #python must be x32 version (windows 7 version 3.7.0) ( windows 10 version 3.10.6)
+- python -m pip install Pillow==9.5.0
+- Download and install OfficeSetup.exe (if you have a license) 
+- Download pdf reader
+- Download .NET Framwork (3.5 win7 4.8 win10-11)
+- Download 7z for windows 10-11 and 7 winrar
+- Create 2-4 files and docs in Desktop (to make the vm looks like reality)
+- disable anti-virus
+- disable auto update
+- disable firewall
+- add the agent in task scheduler run when it log on as admin
+
+
+///***Don't forget to do:***
+
+HOSTONLY
+STATIC IP for the VM
+AGENT CONNECTION (Make sure by "curl vmip:8000" to see if the agent works as expected)
+take a SNAPSHOT X (name it snapshot1)
+make sure the interface name on KVM.conf 
+
+///***install mongodb:***
+
+https://www.cherryservers.com/blog/install-mongodb-ubuntu-22-04
