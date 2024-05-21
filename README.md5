@@ -1,5 +1,8 @@
 # How2InstallCapeSandbox-
-How2InstallCapeSandbox 
+
+// The internet is full of guides on how to install CAPEV2 sandbox , all of them are faulty and require troubleshooting . this one is free from all of it.
+
+// Only use ubuntu 22 from   https://releases.ubuntu.com/jammy/ubuntu-22.04.4-desktop-amd64.iso , other versions WONT WORK !!!!!!!!!!!
 
 sudo apt-get update && sudo apt-get upgrade -y
 
