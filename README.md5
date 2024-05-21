@@ -27,6 +27,20 @@ cd /opt/CAPEv2/installer
 
 sudo ./kvm-qemu.sh virtmanager cape | tee kvm-qemu-virt-manager.log
 
+sudo reboot
+
+
+
+///*** Pause here and create a Win7 VM , creating it later wasnt successful ***
+
+sudo virt-manager
+
+download Windows7 ISO from here and create your VM   ===>    https://drive.google.com/drive/folders/1BsRPYC0v__GiwO8k558FDdGx9IbBAWoP
+
+
+
+///*** Continue CAPE installation ***
+
 cd /opt/CAPEv2/installer
 
 sudo ./cape2.sh all cape | tee cape.log
@@ -61,7 +75,7 @@ add VM info like name, label, platfarm, ip ...etc
 
 
 
-///***troubleshoot virtual machine mananger***
+///***troubleshoot virtual machine mananger only if needed ***
 
 sudo dpkg -i --force-overwrite /var/cache/apt/archives/qemu-system-data_1%3a6.2+dfsg-2ubuntu6.19_all.deb
 
