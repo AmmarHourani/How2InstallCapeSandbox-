@@ -13,7 +13,7 @@ git clone https://github.com/kevoreilly/CAPEv2.git
 
 cd CAPEv2/installer
 
-sed -i 's/<WOOT>/BXPC/g' kvm-qemu.sh
+sed -i 's/'<WOOT>'/BXPC/g' kvm-qemu.sh
 
 chmod a+x kvm-qemu.sh
 
