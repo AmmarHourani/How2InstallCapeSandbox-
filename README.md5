@@ -67,6 +67,10 @@ sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
 
 sudo pip install pygraphviz
 
+pip install pydantic==2.4.0
+
+pip install pyparsing==2.1.0
+
 sudo -u cape poetry run pip install -r extra/optional_dependencies.txt
 
 sudo -u cape poetry run pip install pyattck==7.1.2
