@@ -9,6 +9,8 @@
 
 // Only use ubuntu 22 from   https://releases.ubuntu.com/jammy/ubuntu-22.04.4-desktop-amd64.iso , other versions WONT WORK !!!!!!!!!!!
 
+// Reject and prevent any Ubuntu software update offered in GUI window
+
 sudo apt-get update && sudo apt-get upgrade -y
 
 sudo chmod -R a+rwx /opt/
@@ -60,6 +62,10 @@ cd /opt/CAPEv2
 poetry install
 
 poetry env list
+
+sudo apt-get install python3-dev graphviz libgraphviz-dev pkg-config
+
+sudo pip install pygraphviz
 
 sudo -u cape poetry run pip install -r extra/optional_dependencies.txt
 
